@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: biar scroll lebih smooth di mobile */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Drawer dari DaisyUI (yang kita pakai di NavigationDrawer) */
+.drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
+  @apply bg-black/50;
+}
